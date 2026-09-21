@@ -11,8 +11,9 @@ const enrollees = [
 function getEnrollees() {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
-            // resolve(enrollees);
+            resolve(enrollees);
 
+        
             reject(new Error('Failed to fetch enrollees data'));
         }, 1000);
     });

@@ -1,21 +1,38 @@
+# IT313 TypeScript Foundations
 
-# IT313 Enrollment Eligibility Checker #
+**Name:** Zild Jan F. Abuga-a
+**Section:** IT3R2
 
-## Problem overview 
-This program processes raw enrollee grade records for the IT313 registrar into a formatted eligibility report using ES6+ Javascript features in Node.js
+## Description
+An enrollment eligibility checker that calculates student averages and determines whether they are Passing (75 and above) or on Probation (below 75).
 
-## ES6+ features applied
-ES Modules: Exporting/importing utilities in `gradeUtils.js` and `index.js`.
-Promises & Async/Await: Simulating asynchronous API data retrieval  with `try/catch` error handling.
-Destructuring: Direct property extraction (`name`, `prelim`, `midterm`, `final`).
-Array methods:
-- `.map()` to build processed enrollee objects.
-- `.filter()` to isolate passing objects.
-- `.reduce()` to compute total class score. 
+## TypeScript Concepts
+- Interfaces, type aliases, and enums
+- Typed functions and optional properties
+- Promises, async/await, and try/catch
+- Union types and type narrowing
+- Generics and array methods (`map` and `reduce`)
+- ES module imports and exports
+- Strict type checking
 
-Template literals: Clean output formatting.
+## Files
+- `index.ts` - Main program
+- `gradeUtils.ts` - Grade calculations and status checking
+- `tsconfig.json` - TypeScript configuration
 
-## How to run
-Node.js should be installed, then run in the terminal:
-```bash 
-node index.js
+## How to Run
+
+Run the program:
+
+```bash
+npx tsx index.ts
+```
+
+Check for type errors:
+
+```bash
+npx tsc --noEmit
+```
+
+## Expected Result
+The program displays student averages, enrollment statuses, the class average (76.07), and the passing count (3 out of 5).
